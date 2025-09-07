@@ -1,7 +1,7 @@
 services:
   - type: web
     name: reconciler-backend
-    env: java
+    runtime: docker 
     plan: free
     rootDir: backend
     buildCommand: ./mvnw -q -DskipTests package || mvn -q -DskipTests package
