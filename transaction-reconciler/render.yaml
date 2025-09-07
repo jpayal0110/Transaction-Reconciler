@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: reconciler-backend
+    env: java
+    plan: free
+    rootDir: backend
+    buildCommand: ./mvnw -q -DskipTests package || mvn -q -DskipTests package
+    startCommand: java -jar target/*SNAPSHOT.jar
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        fromDatabase:
+          name: reconciler-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromDatabase:
+          name: reconciler-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromDatabase:
+          name: reconciler-db
+          property: password
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
+    autoDeploy: true
+databases:
+  - name: reconciler-db
+    plan: free

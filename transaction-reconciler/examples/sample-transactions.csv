@@ -1,0 +1,4 @@
+txn_id,source,amount,txn_date
+T1001,bankA,100.00,2025-08-01
+T1002,bankA,50.00,2025-08-01
+,bankA,25.00,2025-08-02
