@@ -4,7 +4,7 @@
     
     # Copy pom.xml and source code
     COPY backend/pom.xml .
-    COPY src backend/src
+    COPY backend/src ./src
     
     # Build the application without tests
     RUN mvn -q -DskipTests package
