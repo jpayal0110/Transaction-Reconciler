@@ -3,8 +3,8 @@
     WORKDIR /app
     
     # Copy pom.xml and source code
-    COPY pom.xml .
-    COPY src ./src
+    COPY backend/pom.xml .
+    COPY src backend/src
     
     # Build the application without tests
     RUN mvn -q -DskipTests package
