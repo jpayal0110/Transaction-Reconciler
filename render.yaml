@@ -29,7 +29,7 @@ services:
     buildCommand: npm install && npm run build
     envVars:
       - key: REACT_APP_API_BASE_URL
-        value: https://reconciler-backend.onrender.com
+        value: https://reconciler-backend-djws.onrender.com
     autoDeployTrigger: commit
 
 databases:

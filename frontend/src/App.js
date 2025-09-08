@@ -9,7 +9,7 @@ import ReconciliationResults from './components/ReconciliationResults';
 import Header from './components/Header';
 import { GlobalStyles } from './styles/GlobalStyles';
 
-const API_BASE = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
+const API_BASE = (process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080').replace(/\/$/, '');
 
 const AppContainer = styled.div`
   min-height: 100vh;
