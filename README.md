@@ -1,15 +1,15 @@
-# 🏦 Transaction Reconciler
+# Transaction Reconciler
 
 Transaction Reconciler is a **full-stack web application** that automates reconciliation between **bank transaction data** and **reference ledger data**.  
 It helps identify **matched**, **partially matched**, and **unmatched** transactions using smart matching rules.
 
 ---
 
-## **🚀 Features**
+## **Features**
 - **CSV Upload** → Upload two CSVs: one for transactions, one for reference records.
 - **Smart Reconciliation** → Matches using:
-  - **Transaction ID match** ✅
-  - **Amount + Date match** ✅
+  - **Transaction ID match**
+  - **Amount + Date match** 
 - **Detailed Results Dashboard** → Displays:
   - Total transactions & references
   - Matched vs unmatched counts
@@ -18,7 +18,7 @@ It helps identify **matched**, **partially matched**, and **unmatched** transact
 
 ---
 
-## **🛠️ Tech Stack**
+## **Tech Stack**
 
 ### **Frontend**
 - React (Create React App)
